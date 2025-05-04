@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Grana Burgani Corretora de Seguros - Soluções personalizadas em seguros auto, vida, residencial, saúde e outras modalidades com segurança e confiabilidade.">
+    <meta name="keywords" content="seguros, corretora de seguros, seguro auto, seguro de vida, seguro residencial, seguro saúde, Grana Burgani, GB Corretora">
+    <meta name="author" content="Grana Burgani Corretora de Seguros LTDA">
+    <title>GB Corretora de Seguros - Proteção com Confiança</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .hero-bg {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1501785888041-af3ef285b470?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        .cta-button {
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+        .cta-button:hover {
+            background-color: #1d4ed8;
+            transform: scale(1.05);
+        }
+        .section-bg {
+            background-color: #f9fafb;
+        }
+        .card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        }
+        .navbar {
+            transition: background-color 0.3s ease;
+        }
+        .navbar.scrolled {
+            background-color: #ffffff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .logo {
+            height: 50px;
+            object-fit: contain;
+        }
+        .whatsapp-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25D366;
+            color: white;
+            padding: 15px;
+            border-radius: 50%;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+            z-index: 1000;
+        }
+        .whatsapp-button:hover {
+            transform: scale(1.1);
+        }
+        /* Custom Swiper Styles */
+        .swiper-container {
+            width: 100%;
+            padding-bottom: 40px;
+        }
+        .swiper-slide {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .swiper-button-next,
+        .swiper-button-prev {
+            color: #1d4ed8;
+        }
+        .swiper-pagination-bullet {
+            background: #1d4ed8;
+            opacity: 0.5;
+        }
+        .swiper-pagination-bullet-active {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <!-- Navbar -->
+    <nav class="navbar fixed top-0 w-full bg-white bg-opacity-90 z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div>
+                <a href="#home">
+                    <img src="https://i.postimg.cc/3Jq2nL2X/gb-corretora-logo.png" alt="Grana Burgani Corretora de Seguros" class="logo">
+                </a>
+            </div>
+            <div class="space-x-6">
+                <a href="#home" class="text-gray-700 hover:text-blue-600">Home</a>
+                <a href="#sobre" class="text-gray-700 hover:text-blue-600">Sobre</a>
+                <a href="#servicos" class="text-gray-700 hover:text-blue-600">Serviços</a>
+                <a href="#blog" class="text-gray-700 hover:text-blue-600">Blog</a>
+                <a href="#contato" class="text-gray-700 hover:text-blue-600">Contato</a>
+            </div>
+            <a href="#contato" class="bg-blue-600 text-white px-4 py-2 rounded-lg cta-button">Faça uma Cotação</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-bg h-screen flex items-center text-center text-white">
+        <div class="container mx-auto px-4">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Grana Burgani Seguros</h1>
+            <p class="text-lg md:text-xl mb-6">Soluções personalizadas em seguros para você, sua família e empresa. Nossa prioridade é sua segurança e tranquilidade.</p>
+            <a href="#contato" class="bg-blue-600 text-white px-6 py-3 rounded-lg cta-button">Solicite sua Cotação Agora</a>
+        </div>
+    </section>
+
+    <!-- Sobre Section -->
+    <section id="sobre" class="py-16 section-bg">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-blue-900 mb-8">Sobre a GB Corretora</h2>
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2">
+                    <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop+w=800&q=80" alt="Equipe GB Corretora" class="w-full rounded-lg">
+                </div>
+                <div class="md:w-1/2 md:pl-8 mt-6 md:mt-0">
+                    <p class="text-gray-600 mb-4">Fundada em 20/12/2015, a Grana Burgani Corretora de Seguros LTDA (CNPJ: 25.350.084/0001-14) é referência em soluções personalizadas de seguros. Com sede em São Bernardo do Campo, SP, trabalhamos com as melhores seguradoras para oferecer proteção e tranquilidade.</p>
+                    <p class="text-gray-600 mb-4">Nosso compromisso é com a transparência, agilidade e confiança, sempre colocando suas necessidades em primeiro lugar.</p>
+                </div>
+            </div>
+            <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="card bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold mb-4">Missão</h3>
+                    <p class="text-gray-600">Oferecer soluções em seguros que tragam segurança e tranquilidade, com atendimento personalizado e ético.</p>
+                </div>
+                <div class="card bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold mb-4">Visão</h3>
+                    <p class="text-gray-600">Ser a corretora de seguros mais confiável, reconhecida pela excelência no atendimento.</p>
+                </div>
+                <div class="card bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold mb-4">Valores</h3>
+                    <p class="text-gray-600">Transparência, agilidade, confiança e compromisso com o cliente.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Serviços Section -->
+    <section id="servicos" class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-blue-900 mb-8">Nossos Serviços</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="card bg-white p-6 rounded-lg shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="Seguro Auto" class="w-full h-48 object-cover rounded-t-lg">
+                    <h3 class="text-xl font-semibold mt-4">Seguro Auto</h3>
+                    <p class="text-gray-600 mt-2">Proteção completa para seu veículo contra roubo, colisão e danos a terceiros. Dirija com tranquilidade.</p>
+                </div>
+                <div class="card bg-white p-6 rounded-lg shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="Seguro Saúde" class="w-full h-48 object-cover rounded-t-lg">
+                    <h3 class="text-xl font-semibold mt-4">Seguro Saúde</h3>
+                    <p class="text-gray-600 mt-2">Planos de saúde que garantem acesso a consultas, exames e internações nas melhores redes disponíveis.</p>
+                </div>
+                <div class="card bg-white p-6 rounded-lg shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="Seguro Residencial" class="w-full h-48 object-cover rounded-t-lg">
+                    <h3 class="text-xl font-semibold mt-4">Seguro Residencial</h3>
+                    <p class="text-gray-600 mt-2">Proteja sua casa contra incêndio, roubo e furto, e outras coberturas sob medida.</p>
+                </div>
+                <div class="card bg-white p-6 rounded-lg shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="Seguro de Vida" class="w-full h-48 object-cover rounded-t-lg">
+                    <h3 class="text-xl font-semibold mt-4">Seguro de Vida</h3>
+                    <p class="text-gray-600 mt-2">Garantia financeira para sua família com coberturas para morte, invalidez e doenças graves.</p>
+                </div>
+                <div class="card bg-white p-6 rounded-lg shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1501555088652-021faa106b9b?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="Outras Modalidades" class="w-full h-48 object-cover rounded-t-lg">
+                    <h3 class="text-xl font-semibold mt-4">Outras Modalidades</h3>
+                    <p class="text-gray-600 mt-2">Diversas opções de seguros para atender às suas necessidades específicas:</p>
+                    <ul class="list-disc pl-5 mt-2 text-gray-600">
+                        <li>Viagem</li>
+                        <li>Responsabilidade Civil</li>
+                        <li>Fiança</li>
+                        <li>Equipamentos Eletrônicos</li>
+                        <li>Instrumentos Musicais</li>
+                        <li>Outros</li>
+                    </ul>
+                </div>
+                <div class="card bg-white p-6 rounded-lg shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="Serviços Auxiliares GB" class="w-full h-48 object-cover rounded-t-lg">
+                    <h3 class="text-xl font-semibold mt-4">Serviços Auxiliares GB</h3>
+                    <p class="text-gray-600 mt-2">Soluções complementares para suas necessidades:</p>
+                    <ul class="list-disc pl-5 mt-2 text-gray-600">
+                        <li>Assessoria Jurídica</li>
+                        <li>Despachante</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="py-16 section-bg">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-blue-900 mb-8">Blog da GB Corretora</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Notícias de Seguro Auto -->
+                <div class="card bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold mb-2">Dicas para Escolher o Melhor Seguro Auto em 2025</h3>
+                    <p class="text-gray-600 mb-2">Publicado em: 01/05/2025</p>
+                    <p class="text-gray-600">Com o aumento dos casos de roubo e colisão, escolher um seguro auto adequado é essencial. Saiba como analisar coberturas, franquias e assistências 24h para proteger seu veículo.</p>
+                </div>
+                <div class="card bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold mb-2">Novas Tendências em Seguros Auto: Tecnologia a Favor</h3>
+                    <p class="text-gray-600 mb-2">Publicado em: 15/04/2025</p>
+                    <p class="text-gray-600">A introdução de telemetria e IA está revolucionando os seguros auto. Veja como essas inovações podem reduzir custos e aumentar a segurança nas estradas.</p>
+                </div>
+                <div class="card bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold mb-2">Como Renovar seu Seguro Auto com Economia</h3>
+                    <p class="text-gray-600 mb-2">Publicado em: 10/03/2025</p>
+                    <p class="text-gray-600">Renove seu seguro auto com descontos! Aprenda a negociar com a corretora e aproveitar promoções sazonais para manter sua proteção sem pesar no bolso.</p>
+                </div>
+                <!-- Notícias de Seguro Saúde -->
+                <div class="card bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold mb-2">A Importância do Seguro Saúde em Tempos de Pandemia</h3>
+                    <p class="text-gray-600 mb-2">Publicado em: 20/04/2025</p>
+                    <p class="text-gray-600">Com a volta de surtos sazonais, ter um seguro saúde é mais crucial do que nunca. Descubra os benefícios de planos que cobrem internações e consultas especializadas.</p>
+                </div>
+                <div class="card bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold mb-2">Planos de Saúde: O Que Mudou em 2025?</h3>
+                    <p class="text-gray-600 mb-2">Publicado em: 05/04/2025</p>
+                    <p class="text-gray-600">Novas regulamentações e coberturas foram implementadas este ano. Entenda como isso afeta sua escolha de plano e como a GB Corretora pode ajudar.</p>
+                </div>
+                <div class="card bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold mb-2">Dicas para Escolher o Melhor Seguro Saúde Familiar</h3>
+                    <p class="text-gray-600 mb-2">Publicado em: 25/03/2025</p>
+                    <p class="text-gray-600">Proteger sua família exige um plano sob medida. Veja como comparar redes credenciadas e coberturas para encontrar o ideal para sua rotina.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Depoimentos Section (Carrossel) -->
+    <section id="depoimentos" class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-blue-900 mb-8">O que Nossos Clientes Dizem</h2>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="card bg-white p-6 rounded-lg shadow-lg text-center">
+                            <p class="text-gray-600 italic mb-4">"Fechei o seguro do meu carro com a GB Corretora e o atendimento foi excelente. Super recomendo!"</p>
+                            <p class="text-blue-900 font-semibold">João Silva</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card bg-white p-6 rounded-lg shadow-lg text-center">
+                            <p class="text-gray-600 italic mb-4">"A equipe da GB Corretora foi muito atenciosa e resolveu minha cotação rapidamente. Ótimo serviço!"</p>
+                            <p class="text-blue-900 font-semibold">Maria Oliveira</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card bg-white p-6 rounded-lg shadow-lg text-center">
+                            <p class="text-gray-600 italic mb-4">"Sempre que preciso de um seguro, confio na GB Corretora. Atendimento de primeira!"</p>
+                            <p class="text-blue-900 font-semibold">Carlos Souza</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card bg-white p-6 rounded-lg shadow-lg text-center">
+                            <p class="text-gray-600 italic mb-4">"A GB Corretora foi essencial para proteger meu negócio com um seguro empresarial completo. Atendimento rápido e coberturas que realmente fazem a diferença!"</p>
+                            <p class="text-blue-900 font-semibold">Ana Pereira</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card bg-white p-6 rounded-lg shadow-lg text-center">
+                            <p class="text-gray-600 italic mb-4">"Contratei o plano de saúde com a GB Corretora e fui surpreendido pela qualidade do atendimento e das redes disponíveis. Minha família está muito mais segura agora!"</p>
+                            <p class="text-blue-900 font-semibold">Fernanda Costa</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card bg-white p-6 rounded-lg shadow-lg text-center">
+                            <p class="text-gray-600 italic mb-4">"Depois de um susto com um pequeno incêndio, o seguro residencial da GB Corretora me salvou! A equipe foi ágil e me deu todo o suporte para recuperar minha casa."</p>
+                            <p class="text-blue-900 font-semibold">Roberto Lima</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Botões de Navegação -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <!-- Indicadores (Dots) -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato e Cotação Section -->
+    <section id="contato" class="py-16 section-bg">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-blue-900 mb-8">Entre em Contato</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Solicite uma Cotação</h3>
+                    <p class="text-gray-600 mb-4">Preencha o formulário abaixo para solicitar sua cotação. Nossa equipe entrará em contato em breve!</p>
+                    <form id="cotacao-form" class="space-y-4">
+                        <input type="text" placeholder="Nome" class="w-full p-3 border rounded-lg" required>
+                        <input type="email" placeholder="E-mail" class="w-full p-3 border rounded-lg" required>
+                        <input type="tel" placeholder="Telefone" class="w-full p-3 border rounded-lg" required>
+                        <select class="w-full p-3 border rounded-lg" required>
+                            <option value="">Tipo de Seguro</option>
+                            <option value="auto">Seguro Auto</option>
+                            <option value="vida">Seguro de Vida</option>
+                            <option value="residencial">Seguro Residencial</option>
+                            <option value="saude">Seguro Saúde</option>
+                            <option value="outras">Outras Modalidades</option>
+                        </select>
+                        <textarea placeholder="Mensagem" class="w-full p-3 border rounded-lg" rows="4"></textarea>
+                        <button type="submit" class="bg-blue-600 text-white px-6 py-3 rounded-lg cta-button">Enviar</button>
+                    </form>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Nossos Contatos</h3>
+                    <p class="text-gray-600 mb-2 flex items-center"><i class="fas fa-phone mr-2"></i> (11) 4362-4040</p>
+                    <p class="text-gray-600 mb-2 flex items-center"><i class="fab fa-whatsapp mr-2"></i> (11) 94457-0248 (Célio)</p>
+                    <p class="text-gray-600 mb-2 flex items-center"><i class="fab fa-whatsapp mr-2"></i> (11) 97648-6172 (Vinícius)</p>
+                    <p class="text-gray-600 mb-2 flex items-center"><i class="fas fa-envelope mr-2"></i> seguros@granaburgani.com.br</p>
+                    <p class="text-gray-600 mb-2 flex items-center"><i class="fas fa-map-marker-alt mr-2"></i> Rua Candido Portinari, 17, Rudge Ramos, São Bernardo do Campo, SP, CEP 09623-010</p>
+                    <p class="text-gray-600 mb-2 flex items-center"><i class="fas fa-clock mr-2"></i> Seg - Sex das 9:00h às 17:30h</p>
+                    <div class="mt-4">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.123456789!2d-46.565432!3d-23.654321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce429a7f2b2b2f%3A0x4f6b8e9c8f2b2b2f!2sRua%20Candido%20Portinari%2C%2017%2C%20Rudge%20Ramos%2C%20S%C3%A3o%20Bernardo%20do%20Campo%2C%20SP%2C%2009623-010!5e0!3m2!1spt-BR!2sbr!4v1698765432109" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/5511976486172" target="_blank" class="whatsapp-button">
+        <i class="fab fa-whatsapp text-2xl"></i>
+    </a>
+
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p>Grana Burgani Corretora de Seguros LTDA - CNPJ: 25.350.084/0001-14</p>
+            <p>Rua Candido Portinari, 17, Rudge Ramos, São Bernardo do Campo, SP, CEP 09623-010</p>
+            <p>© 2025 GB Corretora de Seguros LTDA. Todos os direitos reservados.</p>
+            <div class="mt-4 space-x-4">
+                <a href="#" class="text-white hover:text-blue-300">Política de Privacidade</a>
+                <a href="#" class="text-white hover:text-blue-300">Termos de Uso</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        // Navbar Scroll Effect
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Smooth Scrolling for Anchor Links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+
+        // Form Submission (Placeholder)
+        document.getElementById('cotacao-form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Cotação enviada com sucesso! Entraremos em contato em breve.');
+        });
+
+        // Inicializar o Swiper (Carrossel de Depoimentos)
+        const swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1, // Apenas 1 slide por vez em todas as resoluções
+            spaceBetween: 20,
+            loop: true, // Loop infinito
+            autoplay: {
+                delay: 3000, // Avança a cada 3 segundos
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+</body>
+</html>
